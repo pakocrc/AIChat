@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A3D82842D31E7AB0025F4D3 /* GeminiAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D82832D31E7AB0025F4D3 /* GeminiAPIResponse.swift */; };
+		8A3D82862D31F4C40025F4D3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D82852D31F4C40025F4D3 /* NetworkManager.swift */; };
+		8A3D82882D31F5680025F4D3 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D82872D31F5680025F4D3 /* RequestBuilder.swift */; };
+		8A3D828A2D31F9BA0025F4D3 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D82892D31F9BA0025F4D3 /* GeminiService.swift */; };
+		8A3D828C2D32052B0025F4D3 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D828B2D32052B0025F4D3 /* ErrorMessages.swift */; };
+		8A3D828F2D3206670025F4D3 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D828E2D3206670025F4D3 /* AsyncButton.swift */; };
 		8AB5836F2D30B89E000F467D /* AIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5836E2D30B89E000F467D /* AIChatApp.swift */; };
-		8AB583712D30B89E000F467D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB583702D30B89E000F467D /* ContentView.swift */; };
+		8AB583712D30B89E000F467D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB583702D30B89E000F467D /* ChatView.swift */; };
 		8AB583732D30B8A0000F467D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB583722D30B8A0000F467D /* Assets.xcassets */; };
 		8AB583762D30B8A0000F467D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB583752D30B8A0000F467D /* Preview Assets.xcassets */; };
 		8AB583802D30B8A0000F467D /* AIChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5837F2D30B8A0000F467D /* AIChatTests.swift */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A3D82832D31E7AB0025F4D3 /* GeminiAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiAPIResponse.swift; sourceTree = "<group>"; };
+		8A3D82852D31F4C40025F4D3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8A3D82872D31F5680025F4D3 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		8A3D82892D31F9BA0025F4D3 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		8A3D828B2D32052B0025F4D3 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		8A3D828E2D3206670025F4D3 /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		8AB5836B2D30B89E000F467D /* AIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB5836E2D30B89E000F467D /* AIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatApp.swift; sourceTree = "<group>"; };
-		8AB583702D30B89E000F467D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AB583702D30B89E000F467D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		8AB583722D30B8A0000F467D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB583752D30B8A0000F467D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AB5837B2D30B8A0000F467D /* AIChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +83,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A3D82812D31E7880025F4D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A3D82832D31E7AB0025F4D3 /* GeminiAPIResponse.swift */,
+				8A3D828B2D32052B0025F4D3 /* ErrorMessages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A3D82822D31E7930025F4D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8A3D82852D31F4C40025F4D3 /* NetworkManager.swift */,
+				8A3D82872D31F5680025F4D3 /* RequestBuilder.swift */,
+				8A3D82892D31F9BA0025F4D3 /* GeminiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8A3D828D2D3205860025F4D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AB583702D30B89E000F467D /* ChatView.swift */,
+				8A3D828E2D3206670025F4D3 /* AsyncButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8AB583622D30B89E000F467D = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +134,10 @@
 		8AB5836D2D30B89E000F467D /* AIChat */ = {
 			isa = PBXGroup;
 			children = (
+				8A3D828D2D3205860025F4D3 /* Views */,
+				8A3D82822D31E7930025F4D3 /* Network */,
+				8A3D82812D31E7880025F4D3 /* Model */,
 				8AB5836E2D30B89E000F467D /* AIChatApp.swift */,
-				8AB583702D30B89E000F467D /* ContentView.swift */,
 				8AB583722D30B8A0000F467D /* Assets.xcassets */,
 				8AB583742D30B8A0000F467D /* Preview Content */,
 			);
@@ -257,7 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AB583712D30B89E000F467D /* ContentView.swift in Sources */,
+				8A3D828C2D32052B0025F4D3 /* ErrorMessages.swift in Sources */,
+				8A3D82882D31F5680025F4D3 /* RequestBuilder.swift in Sources */,
+				8A3D82862D31F4C40025F4D3 /* NetworkManager.swift in Sources */,
+				8A3D82842D31E7AB0025F4D3 /* GeminiAPIResponse.swift in Sources */,
+				8AB583712D30B89E000F467D /* ChatView.swift in Sources */,
+				8A3D828A2D31F9BA0025F4D3 /* GeminiService.swift in Sources */,
+				8A3D828F2D3206670025F4D3 /* AsyncButton.swift in Sources */,
 				8AB5836F2D30B89E000F467D /* AIChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AIChatApp: App {
+    let service = GeminiService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView(service: service)
         }
     }
 }
